@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+   db:
+     build: ./mysql
+     volumes:
+       - db_data:/var/lib/mysql
+     environment:
+       MYSQL_ROOT_PASSWORD: root
+   net:
+    build: ./net
+    ports:
+      - '8000:80'
+    restart: always
+    depends_on:
+      - db
+volumes:
+    db_data:

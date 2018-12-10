@@ -1,0 +1,141 @@
+﻿<html>
+<head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: "Lato", sans-serif
+            }
+
+            .mySlides {
+                display: none
+            }
+        </style>
+    </head>
+<body>
+    <!-- Page content CONTENIDO DE LA PAGINA-->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px"> </div>
+
+        @{
+            ViewBag.Title = "Fundacion Esperanza de vida";
+        }
+
+    <div class="container">
+        <h1 style="color:black;">
+            <br />Fundacion Esperanza de vida
+        </h1>
+        <p class="lead">
+            La FDV recoge un importante conjunto de fundaciones de origen empresarial o familiar de Colombia. Este es un análisis de su composición de acuerdo con el origen, la fecha de fundación, la presencia territorial, el lugar desde donde trabajan y los tipos de intervención que adelantan las fundaciones miembros.
+        </p>
+        <p><a class="btn info"> Estadisticas&raquo;</a></p>
+        <div class="w3-row-padding w3-margin-top">
+
+            <div class="w3-third">
+                <div class="w3-card">
+                    <img src="@Url.Content("~/Content/imagenes/Estadistica.png")" class="w3-round-small" alt="Norway" style="width:100%">
+                    <div class="w3-container">
+                        <h4>FDV --- Estadisticas </h4>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+        </div>
+        <br />
+        <br />
+        <!-- The Tour Section -->
+        <div class="w3-black" id="tour">
+            <div class="w3-container w3-content w3-padding-70" style="max-width:800px">
+                <h2 class="w3-wide w3-center">¿COMO TE PODEMOS AYUDAR?</h2>
+                <p class="w3-opacity w3-center"><i>Nada de lo que hacemos sería posible sin la ayuda de todas las personas que creen en nuestra misión y hacen su aporte .Tu puedes ser parte UNETE. </i></p><br>
+                <p class="w3-opacity w3-center"><i>PROGRAMAS DE APOYO:</i></p><br>
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-container w3-white">
+                            <p><b>Plan Padrino</b></p>
+                            <p class="w3-opacity">Fri 27 Nov 2016</p>
+                            <p>Tiene como intención vincular personas filantrópicas para aunar esfuerzos que nos permitan llevar todos nuestros servicios a los niños y sus familias y cada día de una mejor manera, perdurando en el tiempo.</p>
+                            <br />
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+
+                        <div class="w3-container w3-white">
+                            <p><b>Voluntarios</b></p>
+                            <p class="w3-opacity">Sat 28 Nov 2016</p>
+                            <p>Un voluntario es una persona que por decisión propia y libre, ayuda con su trabajo y dedicación, al desarrollo de una comunidad, sin esperar ninguna retribución a cambio, solo el placer de contribuir a que la vida de estos pequeños sea mejor. </p>
+                            <br />
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-container w3-white">
+                            <p><b>Proyectos</b></p>
+                            <p class="w3-opacity">Sun 29 Nov 2016</p>
+                            <p>Nuestros proyectos buscan mejorar las condiciones de vida de los usuarios y la comunidad.</p><p>UNETE</p>
+                            <p>Se garantiza la publicación de su marca o en espacios físicos dentro de los eventos.</p><br>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Solicitar</button>
+
+                            <!-- SOLICITAR Modal -->
+                            <div id="ticketModal" class="w3-modal">
+                                <div class="w3-modal-content w3-animate-top w3-card-4">
+                                    <header class="w3-container w3-teal w3-center w3-padding-32">
+                                        <span onclick="document.getElementById('ticketModal').style.display='none'"
+                                              class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                                        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Solicitar</h2>
+                                    </header>
+                                    <div class="w3-container">
+                                        <!-- SOLICITAR Modal -->
+                                        <div id="ticketModal" class="w3-modal">
+                                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                                <header class="w3-container w3-teal w3-center w3-padding-32">
+                                                    <span onclick="document.getElementById('ticketModal').style.display='none'"
+                                                          class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                                                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Solicitar</h2>
+                                                </header>
+                                                <div class="w3-container">
+
+                                                    <p><label><i class="fa fa-shopping-cart"></i>Informacion</label></p>
+                                                    <input class="w3-input w3-border" type="text" placeholder="How many?">
+                                                    <p><label><i class="fa fa-user"></i> Send To</label></p>
+                                                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                                                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+                                                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                                                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @using (Html.BeginForm("SendInfo", "Home", FormMethod.Post)) 
+                                        {
+                                            <p><label><i class="fa fa-address-book-o"></i>Informacion</label></p>
+                                            <input name="nombreIn" class="w3-input w3-border" type="text" placeholder="Enter your name please...">
+                                            <p><label><i class="fa fa-address-book-o"></i> Send To</label></p>
+                                            <input name="correoIn" class="w3-input w3-border" type="text" placeholder="Enter email please...">
+                                            <button type="submit" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">
+                                                Send To <i class="fa fa-check"></i>
+                                            </button>
+                                            <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">
+                                                Close <i class="fa fa-remove"></i>
+                                            </button>
+                                            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
+
